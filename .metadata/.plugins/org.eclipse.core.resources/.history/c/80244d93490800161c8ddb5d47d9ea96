@@ -1,0 +1,51 @@
+import java.util.Arrays;
+
+/**
+ * Quick Sort
+ * @author gireesh_sk
+ *
+ */
+public class Main {
+	public static void main(String[] args) {
+		
+		int[] input= {6,5,3,1,8,7,2,4};
+		System.out.println("Un Soetrd Array : " + Arrays.toString(input));
+		
+		
+		
+	}
+}
+
+
+class QuickSort{
+	private int intput[];
+	private int lenght;
+	
+	
+	
+	public void sort(int[] numbers){
+		
+		if(numbers == null || numbers.length == 0){
+			System.out.println("List is empty!!");
+			return;
+		}
+		
+		this.intput = numbers;
+		this.lenght = numbers.length;
+		
+		
+		
+		
+		
+	}
+	
+	
+	private void quickSort(int low, int high){
+		
+		int i = low;
+		int j = high;
+		
+		int pivot = (low+high) / 2;
+		
+	}
+}
