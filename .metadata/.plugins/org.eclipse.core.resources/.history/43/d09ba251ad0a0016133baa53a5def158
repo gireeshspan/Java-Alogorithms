@@ -1,0 +1,11 @@
+package org.giri.beans;
+
+public class Employee {
+	
+	private Integer empid;
+	private String name;
+	private Double slary;
+	
+	
+
+}

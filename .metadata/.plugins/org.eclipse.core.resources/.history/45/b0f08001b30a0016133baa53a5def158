@@ -1,0 +1,11 @@
+package org.giri.logic;
+
+public class Mian {
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+	
+}

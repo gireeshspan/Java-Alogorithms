@@ -1,0 +1,20 @@
+package org.giri.logic;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.giri.beans.Employee;
+
+public class Mian {
+
+	public static void main(String[] args) {
+		
+		Set<Employee> set=new HashSet<Employee>();
+		
+		Employee emp1 = new Employee(1, "Sowmya", 100000000.00);
+		Employee emp2 = new Employee(2, "ALok", 100000000.00);
+		Employee emp3 = new Employee(1, "Giri", 100000000.00);
+		
+	}
+	
+}
