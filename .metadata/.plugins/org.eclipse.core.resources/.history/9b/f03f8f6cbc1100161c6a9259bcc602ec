@@ -1,0 +1,21 @@
+package waitandnotify;
+
+public class Job {
+	
+	public void produce(){
+		
+		try {
+			System.out.println("Waiting for ket to press");
+			wait();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	public void consumer(){
+		
+	}
+
+}

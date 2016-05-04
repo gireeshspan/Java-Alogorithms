@@ -1,0 +1,37 @@
+package waitandnotify;
+
+import java.util.Scanner;
+
+public class Job {
+	
+	Integer lock = new Integer(10);
+	
+	public void produce(){
+		try {
+			synchronized (this) {
+				System.out.println("Waiting for key to press");
+				wait();
+				System.out.println("resumed");
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public void consumer(){
+		try {
+			Scanner out = new Scanner(System.in);
+			Thread.sleep(1000);
+			synchronized (this) {
+				out.nextLine();
+				System.out.println("return key pressed");
+				notify();
+				Thread.sleep(3000);
+			}
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

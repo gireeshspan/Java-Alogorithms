@@ -1,0 +1,40 @@
+package waitandnotify;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		final Job job = new Job();
+		
+		Thread t1 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				job.produce();
+			}
+		});
+		
+		
+		Thread t2 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				job.consumer();
+			}
+		});
+		
+		t1.start();
+		t2.start();
+		
+		try {
+			t1.join();
+			t2.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+
+}

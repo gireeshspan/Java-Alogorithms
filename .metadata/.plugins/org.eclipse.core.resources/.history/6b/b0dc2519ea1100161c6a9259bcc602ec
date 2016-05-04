@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+
+public class FailFastTest {
+public static void main(String[] args) {
+
+ArrayList nameList = new ArrayList();
+nameList.add("praveen");
+nameList.add("ravi");
+nameList.add("javarevisited");
+nameList.add("chinni");
+
+Iterator itr = nameList.iterator();
+while (itr.hasNext()) {
+String string = (String) itr.next();
+int temp = string.indexOf(string);
+if ("javarevisited".equals(string)) {
+nameList.remove(temp);
+}
+System.out.println(string);
+}
+}
+}
+

@@ -1,0 +1,14 @@
+package waitandnotify;
+
+public class Job {
+	
+	public void produce(){
+		
+	}
+	
+	
+	public void consumer(){
+		
+	}
+
+}

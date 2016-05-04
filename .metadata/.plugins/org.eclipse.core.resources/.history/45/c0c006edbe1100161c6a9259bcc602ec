@@ -1,0 +1,26 @@
+package waitandnotify;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		final Job job = new Job();
+		
+		Thread t1 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				job.produce();
+			}
+		});
+		
+		
+		Thread t2 = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				job.consumer();
+			}
+		});
+		
+	}
+
+}

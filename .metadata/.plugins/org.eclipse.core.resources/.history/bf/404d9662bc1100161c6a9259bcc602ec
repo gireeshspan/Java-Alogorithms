@@ -1,0 +1,17 @@
+package waitandnotify;
+
+public class Job {
+	
+	public void produce(){
+		
+		System.out.println("Waiting for ket to press");
+		wait();
+		
+	}
+	
+	
+	public void consumer(){
+		
+	}
+
+}
